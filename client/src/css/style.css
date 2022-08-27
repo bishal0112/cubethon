@@ -239,3 +239,7 @@ body {
     font-size: 3rem;
 }
 /* Footer Ends Here */
+
+.active-nav{  
+    color: var(--primary-color) !important;
+}

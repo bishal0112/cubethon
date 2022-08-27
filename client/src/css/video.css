@@ -18,61 +18,17 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: sans-serif;
-    color: var(--text);
-}
-#nav-bar {
-    height: 10vh;
-    display: flex;
-    font-weight: 200;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-}
-.nav-bar--left {
-    border: 1px solid black;
-}
-.nav-bar--right ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-.nav-bar--right ul li {
-    padding: 1rem;
-}
-.nav-bar--right ul li a {
-    color: var(--text-color);
-    text-decoration-color: var(--primary-color-dark);
-    text-decoration-thickness: 2px;
-    text-underline-offset: 6px;
-}
-.nav-bar--right ul li a:hover {
-    color: var(--primary-color-light);
-    text-decoration-color: var(--primary-color-light);
-}
-#logout_btn {
-    color: var(--text-color);
-    padding: 0.6rem 1.4rem; 
-    background-color: var(--primary-color);
-    text-decoration: none;
-    border-radius: 15px;
-}
-
-
 .hero {
-    min-height: 90vh;
-    background-image: var(--primary);
+    height: 90vh;
+    background: var(--primary);
     display: flex;
     align-items: center;
 }
 .container {
-    width: 100vw;
+    width: 100%;
     display: grid;
-    grid-template-columns: 1.8fr 1.2fr;
-    gap: 1rem;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
     padding: .5rem 1rem;
     text-transform: capitalize;
 }
@@ -85,7 +41,7 @@ body {
 
 .main-video, .video-playlist {
     width: 100%;
-    height: 30rem;
+    height: 50rem;
 }
 
 .main-video .title {
@@ -102,7 +58,7 @@ body {
 }
 
 .video-playlist .videos{
-    height: 70%;
+    height: 80%;
     overflow-y: auto;
 }
 
@@ -153,8 +109,8 @@ body {
     top: 50%;
     transform: translateY(-50%);
     
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     
     filter: invert(100%);
 }
@@ -164,7 +120,7 @@ body {
 }
 
 .video p {
-   margin-left: 2.5rem;
+   margin-left: 2rem;
 }
 
 .video h3 {
@@ -173,6 +129,6 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
 
-    font: 100 1rem sans-serif;
+    font:100 1.6rem sans-serif;
     padding: 0 .5rem;
 }

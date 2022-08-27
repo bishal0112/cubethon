@@ -21,6 +21,7 @@
 }
 body,
 input {
+  position: relative;
   font-family: "Poppins", sans-serif;
 }
 
@@ -232,7 +233,7 @@ form.sign-in-form {
 
 .container.sign-up-mode form.sign-up-form {
   opacity: 1;
-  z-index: 2;
+  z-index: 5;
 }
 
 .container.sign-up-mode form.sign-in-form {
@@ -380,4 +381,29 @@ form.sign-in-form {
     bottom: 28%;
     left: 50%;
   }
+}
+
+.website_btn{
+  padding: 0.6rem 1rem;
+  display: block;
+  width: 125px;
+  background-color: var(--primary-color);
+  border-radius: 39px;
+  text-decoration: none;
+  color: var(--background-color-main);
+  text-align: center;  
+  z-index: 3;
+}
+.website_btn:hover {
+  background-color: var(--primary-color-light);
+}
+.website_btn_right{
+  position: absolute;
+  top: 10px;
+  left: 1%;
+}
+.website_btn_left{
+  position: absolute;
+  top: 10px;
+  left: 90%;
 }
