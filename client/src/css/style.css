@@ -36,7 +36,8 @@ body {
     color: var(--text-color);
 }
 .nav-bar--left {
-    border: 1px solid black;
+    width: 12vw;
+    height: 10vh;
 }
 .nav-bar--right ul{
     list-style: none;
@@ -62,6 +63,10 @@ body {
     background-color: var(--primary-color);
     text-decoration: none;
     border-radius: 15px;
+}
+#logo-img{
+    width: 100%;
+    height: 100%;
 }
 
 /* Navigation ends here */

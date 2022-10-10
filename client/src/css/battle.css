@@ -1,0 +1,81 @@
+#gameScreen {
+    height: 100vh;
+}
+
+.main-header {
+    height: 10vh;
+    background-color: rgb(86, 65, 107);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+.btn-leave > a {
+    text-decoration: none;
+}
+.btn-leave{
+    background-color: rgb(255, 74, 74);
+    padding: 1rem 3rem;
+    border-radius: 20px;
+}
+.btn-leave:hover {
+    background-color: rgb(255, 100, 100);
+}
+.main-main{
+    height: 65vh;
+    display: flex;
+}
+.main-main-left {
+    width: 70vw;
+    height: 65vh;
+}
+.main-main-right {
+    border-left: 1px solid black;
+    width: 30vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+}
+.aside-top {
+    height: 33vh;
+}
+.aside-bottom {
+    height: 32vh;
+    background-color: rgb(245, 245, 119);
+    border-top: 1px solid black;
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+
+}
+#localVideo{
+    width: 100%;
+  height: 65vh;
+}
+#remoteVideo{
+    width: 100%;
+    height: auto;
+}
+.timer-section {
+    border-top: 1px solid black;
+    height: 15vh;
+    background-color: #fff;
+    color: #000;
+    font-size: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#main-footer{
+    height: 10vh;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}

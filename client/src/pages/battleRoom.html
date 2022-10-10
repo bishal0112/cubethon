@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cubethon</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/battleRoom.css">
+       <link rel="stylesheet" href="../css/battle.css">
+    <style>
+       /* #nav-bar, #battleSection {
+           display: none;
+          } */
+
+       /* #gameScreen {
+           display: block;
+          } */
+    </style>
+</head>
+<body>
+ <!-- navigation starts here -->
+     <nav id="nav-bar">
+        <div class="nav-bar--left"><img id="logo-img" src="../img/cubethon-1.png" alt="" srcset=""></div>
+        <div class="nav-bar--right">
+            <ul>
+                <li><a href="../pages/timer.html">Timer</a></li>
+                <li ><a href="../pages/battleRoom.html" class="active-nav">Battle</a></li>
+                <li><a href="../pages/video.html">Course</a></li>
+                <li><a href="../chatApp/index.html">Chat</a></li>
+                <li><a href="../pages/signup.html" id="logout_btn">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Party Section Starts Here -->
+    <section id="battleSection">
+      <div class="battleSection-container" id="initialScreen1">   
+        <h1 id="battle-header">Cubethon Battles</h1>
+        <div id="initialScreen" class="h-100">
+              <div class="initialScreen-left">
+                <div class="title">
+                  <p>Create Party</p>
+                </div>
+                <div class="text">
+                  <p>You will receive a room code. Share room code with your friend and he/she can join the same game.</p>
+                </div>
+                <div class="createRoom">
+                  
+                    <button
+                  type="submit"
+                  class="btn btn-success"
+                  id="newGameButton"
+                >
+                   Create
+                </button>
+                
+                </div>
+              </div>
+              <div class="initialScreen-right">
+                <div class="title">
+                  <p>Join Party</p>
+                </div>
+                <div class="text">
+                  <p>Note: You need to use the same code to join the party.</p>
+                </div>
+                <div class="joinRoom">
+                  <div class="form-group">
+                  <input type="text" placeholder="Enter Game Code" id="gameCodeInput"/>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-success"
+                  id="joinGameButton"
+                >
+                  Join
+                </button>
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Section Battle -->
+    <!-- style="display: none;"  -->
+    <div id="gameScreen" style="display: none;" >
+
+    <header class="main-header">
+        <div class="header-left">
+          <h1>Your room code is: <span id="gameCodeDisplay"></span></h1>  
+        </div>
+        <div class="header-right">
+            <div class="btn-leave"><a href="./battleRoom.html">Leave</a></div>
+    </header>
+
+    <div class="main-main">
+      <div class="main-main-left">
+        <video id="localVideo" autoplay></video>
+      </div>
+      <div class="main-main-right">
+        <div class="aside-top">
+            <video id="remoteVideo" autoplay></video>
+        </div>
+        <div class="aside-bottom">
+            <a id = "clear" href = "#">Clear Solves</a><br/>
+            <p><span id="solveNum">Solves: 0</span></p>
+            <p><span id="overallAv">Average: 00:00</span></p>
+            <p><span id="fastest">Best: 00:00</span></p>
+            <p><span id="worst">Worst: 00:00</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timer-section">
+      <div id="timer">
+                <div id="timeOut"><span id="min"></span><span id="colon"></span><span id="sec">0</span>.<span id="decimal">00</span></div>
+            </div>
+    </div>
+  
+   <div id="main-footer">
+       <div class="main_footer-container">
+           <div id="scram">R L U' D' 2D F L R D 2L 2U  R L D</div>
+        </div>
+    </div>
+</div>
+
+    <script src = "/socket.io/socket.io.js"></script>
+    <script type="module" src="../js/battle.room.js"></script>
+    <script src="../js/battleTimer.js"></script>
+</body>
+</html>
